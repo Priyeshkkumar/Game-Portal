@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Priyeshkkumar/Games-Node.js-/issues"
   },
-  "homepage": "https://github.com/Priyeshkkumar/Games-Node.js-#readme"
+  "homepage": "https://github.com/Priyeshkkumar/Games-Node.js-#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
 }
