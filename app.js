@@ -1,6 +1,11 @@
+const express = require("express");
 const express = require( "express" );
 const app = express();
 
+// To use content of public folder
+app.use( express.static ("public" ) );
+
+// Games object to hold game related details
 
 // home page route
 app.get( "/", function( req, res ){
@@ -8,7 +13,7 @@ app.get( "/", function( req, res ){
 } );
 
 // Add Games page route
-app.get( "/addgame", function( req, res ){
+app.get( "/addgames", function( req, res ){
     res.render( "addgames.ejs" );
 } );
 
