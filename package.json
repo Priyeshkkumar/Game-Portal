@@ -1,0 +1,19 @@
+{
+  "name": "onlinegames",
+  "version": "1.0.0",
+  "description": "A simple online flash game playing website ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Priyeshkkumar/Games-Node.js-.git"
+  },
+  "author": "Priyesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Priyeshkkumar/Games-Node.js-/issues"
+  },
+  "homepage": "https://github.com/Priyeshkkumar/Games-Node.js-#readme"
+}
