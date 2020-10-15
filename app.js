@@ -51,6 +51,26 @@ app.get( "/", function( req, res ){
     } );
 } );
 
+// Game Display Route
+app.get( "/game/:id", function(req, res){
+    var gameId = req.params.id;
+
+    gameObj.findById( gameId, function(error, gameFound){
+        if( error ){
+            console.log( "Could Not find game" );
+            console.log(error);
+        }else{
+            res.render( "game.ejs", {
+                gameName: gameFound.gameName,
+                creatorName: gameFound.creatorName,
+                width: gameFound.gameWidth,
+                height: gameFound.gameHeight,
+                fileName: gameFound.gameFile
+            } );
+        }
+    } );
+} );
+
 // Add Games GET route
 app.get( "/addgames", function( req, res ){
     res.render( "addgames.ejs" );

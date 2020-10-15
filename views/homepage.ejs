@@ -6,7 +6,7 @@
             <% for(var i = 0;i < gamesList.length; i++){ %>
                 <div class="col-md-4">
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="#" style="height: 180px">
+                        <img class="card-img-top" src="games/thumbnails/<%= gamesList[i].thumbnailFile %> " style="height: 180px">
                         <div class="card-body">
                         <h5 class="card-title"><%= gamesList[i].gameName %></h5>
                         <p class="card-text">Game created by <%= gamesList[i].creatorName %></p>
